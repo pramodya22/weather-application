@@ -1,0 +1,131 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+   background-color: rgb(rgba(67, 128, 156, 0.8));
+    color: #333;
+}
+
+.weather-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#bg-video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+.content {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #3396b480;
+    
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007AFF;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005BB5;
+}
+
+.current-weather {
+    padding: 20px 0;
+    border-bottom: 1px solid #000000;
+}
+
+#city {
+    font-size: 2em;
+    margin: 0;
+}
+
+#temperature {
+    font-size: 3em;
+    margin: 10px 0;
+    color: rgb(167, 28, 28);
+}
+
+#condition, #high-low {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.hourly-forecast, .daily-forecast {
+    margin-top: 20px;
+    ;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.hours {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(177, 204, 235);
+    
+}
+
+.hour {
+    text-align: center;font-weight: 600 ;
+    margin: 5px;
+    color: rgb(173, 123, 16);
+}
+
+.hour span:first-child {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.hour span:last-child {
+    display: block;
+    font-size: 1.1em;
+}
+
+.day {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    color: rgb(17, 14, 16);
+}
+
+.day:last-child {
+    border-bottom: none;
+}

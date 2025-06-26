@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-container">
+        <div class="video-container">
+            <video autoplay muted loop id="bg-video">
+                <source src="Clouds Animation Video for green screen background ! No copyright.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="content"><br>
+            <input type="text" id="locationInput" placeholder="Enter city name">
+            <button id="searchButton">Search</button>
+            <div class="current-weather">
+                <h1 id="city"></h1>
+                <p id="temperature"></p>
+                <p id="condition"></p>
+                <p id="high-low"></p>
+            </div>
+            <div class="hourly-forecast">
+                <h3>Hourly Forecast</h3>
+                <div class="hours" id="hourly-list"></div>
+            </div>
+            <div class="daily-forecast">
+                <h3>5 Day Forecast</h3>
+                <div id="daily-list"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
